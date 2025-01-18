@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    const myDiv = document.getElementById("myDiv");
+    // Check if the element exists and the attribute exists before accessing it.
+    if (myDiv && myDiv.hasAttribute("data-attribute")) {
+      let x = myDiv.getAttribute("data-attribute");
+      console.log(x);
+    } else {
+      console.log("Element or attribute does not exist.");
+    }
+  </script>
+</body>
+</html>
